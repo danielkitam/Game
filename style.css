@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+
+#game{
+    width: 70%;
+    height: 70vh;
+    border: 2px solid black;
+    background-color:  rgba(255, 250, 249, 0.941);
+    background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+}
+#player-name{
+    height: 5vh;
+    width: 60%;
+    background-color: transparent;
+    position: relative;
+    top: -10%;
+    left: 20%;
+}
+#player-name h3{
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+#character{
+    width: 5%;
+    height: 20%;
+    background-color: rgb(253, 249, 249);
+    position: relative;
+    top: 80%;
+    background-image: url(https://image.spreadshirtmedia.net/image-server/v1/mp/products/T1459A839PA4459PT28D14570873W6430H10000/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/sprinter-coureur-autocollant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    border-radius: 10%;
+}
+
+.animate{
+    animation: jump 500ms linear;
+}
+@keyframes jump{
+    0%{top: 40%;}
+    /* 50%{top: 60%;} */
+    /* 70%{top: 50%;} */
+    100%{top: 80%;}
+}
+
+#block{
+    width: 5%;
+    height: 10%;
+    background-color: rgb(220, 220, 231);
+    position: relative;
+    top: 70%;
+    left: 95%;
+    animation: block 1.5s infinite linear;
+    background-image: url(https://images.pexels.com/photos/6931404/pexels-photo-6931404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    border-radius: 50%;
+}
+@keyframes block{
+    0%{left: 95%;}
+    100%{left: -10%;} 
+}
+
+@media (max-width: 600px) {
+    #game{
+        position: relative;
+        margin-top: 50%;
+        width: 100%;
+        height: 40vh;
+        border: 2px solid black;
+        background-color:  rgba(255, 250, 249, 0.941);
+        background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: cover;
+    }
+    #character{
+        width: 15%;
+    }
+    #block{
+        height: 7%;
+        top: 73%;
+        width: 8%;
+        left: 92%;
+    }
+}
